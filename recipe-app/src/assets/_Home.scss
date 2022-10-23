@@ -1,102 +1,67 @@
 $btnColor: rgb(202, 179, 216);
-$btnText:  rgb(79, 0, 128);
+$btnText: rgb(79, 0, 128);
 
-
-
-.home-wrapper{
-    background-color: rgba(144, 104, 169);
-    padding-bottom: 5rem;
+.home-wrapper {
+	background-color: rgba(144, 104, 169);
+	padding-bottom: 5rem;
 }
 
-.title{
-    color: rgba(255, 255, 255, 0.866);
-    letter-spacing: .3rem;
-
+.title {
+	color: rgba(255, 255, 255, 0.866);
+	letter-spacing: 0.3rem;
 }
 
-.search{
-    min-width: 30rem;
-    border: 2px solid rgba(255, 255, 255, 0.866);
-    padding: .25rem;
-    border-radius: .5rem;
+.search {
+	min-width: 30rem;
+	border: 2px solid rgba(255, 255, 255, 0.866);
+	padding: 0.25rem;
+	border-radius: 0.5rem;
 }
 
-.search-input{
-    border: none;
-    letter-spacing: .05rem;
-
+.search-input {
+	border: none;
+	letter-spacing: 0.05rem;
 }
 
-.submit-btn{
-    background-color: $btnColor;
-    color: $btnText;
-    border:none;
-    letter-spacing: .1rem;
-
+.submit-btn {
+	background-color: $btnColor;
+	color: $btnText;
+	border: none;
+	letter-spacing: 0.1rem;
 }
 
-.submit-btn:hover{
-    background-color: $btnText;
-    color: rgb(202, 179, 216);
-
+.submit-btn:hover {
+	background-color: $btnText;
+	color: rgb(202, 179, 216);
 }
 
-.dropdown-main{
-    background-color: $btnColor;
-    color: $btnText;
-    border: none;
+select {
+	background-color: $btnColor;
+	color: $btnText;
+	border: none;
+	border-radius: 0.4rem;
 }
 
-.dropdown-main:hover{
-    background-color: $btnText;
-    color: rgb(202, 179, 216);
-
+.home-content-wrapper {
+	perspective: 1000px;
 }
 
-.dropdown-wrapper{
-    background-color: transparent;
+.home-content-title {
+	color: $btnText;
 }
 
-.dropdown-menu{
-    background-color: $btnColor;
-    color: $btnText;
+.home-brand {
+	font-size: 15rem;
+	color: $btnText;
+	transform: rotateY(360deg);
+	animation: rotateAnimation 8s linear infinite;
 }
 
-.dropdown-header{
-    color: $btnText;
-    font-weight: 700;
-    letter-spacing: .1rem;
-}
-
-.dropdown-item{
-    color: $btnText;
-}
-
-.dropdown-item:hover{
-    background-color: $btnText;
-    color: rgb(202, 179, 216);
-}
-
-.divider{
-    border: .1px solid $btnText
-}
-
-.home-brand-wrapper{
-    perspective: 1000px;
-}
-
-.home-brand-title{
-    color: $btnText;
-}
-
-.home-brand{
-    font-size: 15rem;
-    color: $btnText;
-    transform: rotateY(360deg);
-    animation: rotateAnimation 8s linear infinite;
-}
-
-@keyframes rotateAnimation{
-    from{transform: rotateY(360deg);}
-    to {transform: rotateY(0deg);}
+@keyframes rotateAnimation {
+	from {
+		transform: rotateY(360deg);
+	}
+	to {
+		transform: rotateY(0deg);
+	}
 }

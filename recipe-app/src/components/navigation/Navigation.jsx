@@ -1,7 +1,7 @@
 import React from "react";
-import { Nav, NavbarBrand, NavItem, NavLink } from "reactstrap";
+import { Nav, NavbarBrand, NavItem } from "reactstrap";
 import { Link } from "react-router-dom";
-import {GiCupcake} from 'react-icons/gi'
+import { GiCupcake } from "react-icons/gi";
 
 const Navigation = () => {
 	return (
@@ -10,7 +10,7 @@ const Navigation = () => {
 				<NavItem>
 					<NavbarBrand>
 						<Link to="/home">
-							<GiCupcake className="brand"  />
+							<GiCupcake className="brand" />
 						</Link>
 					</NavbarBrand>
 				</NavItem>
@@ -20,7 +20,11 @@ const Navigation = () => {
 						<Link to="/about">About</Link>
 					</NavItem>
 					<NavItem>
-						<a href="https://www.github.com/PennyNichols" target="_blank" rel='noreferrer'>
+						<a
+							href="https://www.github.com/PennyNichols"
+							target="_blank"
+							rel="noreferrer"
+						>
 							GitHub
 						</a>
 					</NavItem>

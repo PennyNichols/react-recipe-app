@@ -1,81 +1,79 @@
+$purple: rgb(79, 0, 128);
 
-
-$purple: rgb(79,0,128);
-
-.login-page-wrapper{
-    background-image: url('https://github.com/PennyNichols/react-recipe-app/blob/main/recipe-app/src/assets/bg-img.jpg?raw=true');
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
-    padding: 5rem;
+.login-page-wrapper {
+	background-image: url("https://github.com/PennyNichols/react-recipe-app/blob/main/recipe-app/src/assets/bg-img.jpg?raw=true");
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+	padding: 5rem;
 }
 
-.login-wrapper{
-    display: flex;
-    background-color: rgba(230, 98, 239, 0.508);
-    width: 30rem;
-    height: 30rem;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    border: 2px solid $purple;
-    margin: auto;
+.login-wrapper {
+	display: flex;
+	background-color: rgba(230, 98, 239, 0.508);
+	width: 30rem;
+	height: 30rem;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	border: 2px solid $purple;
+	margin: auto;
 }
 
-.login-brand{
-    color: rgba(255, 0, 255, 0.885);
-    font-size: 8rem;
+.login-brand {
+	color: rgba(255, 0, 255, 0.885);
+	font-size: 8rem;
 }
 
-.login-title{
-    color: $purple;
-    letter-spacing: .2rem;
-    text-transform: uppercase;
-    margin-top: 2rem;
+.login-title {
+	color: $purple;
+	letter-spacing: 0.2rem;
+	text-transform: uppercase;
+	margin-top: 2rem;
 }
 
-.login-form{
-    width: 25rem;
+.login-form {
+	width: 25rem;
 }
 
-.login-input{
-    margin: auto;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    width: 20rem;
-    background-color: rgba(79, 0, 128, 0.409);
-    border: none;
-    color: white;
+.login-input {
+	margin: auto;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	width: 20rem;
+	background-color: rgba(79, 0, 128, 0.409);
+	border: none;
+	color: white;
 }
 
-.login-input:focus{
-    background-color: rgba(79, 0, 128, 0.409);
-    color: white;
-    outline: 0;
+.login-input:focus {
+	background-color: rgba(79, 0, 128, 0.409);
+	color: white;
+	outline: 0;
 }
 
-.login-input::placeholder{
-    color: rgba(255, 255, 255, 0.548);
+.login-input::placeholder {
+	color: rgba(255, 255, 255, 0.548);
 }
 
 .form-control:focus {
-    border-color: inherit;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-  }
-
-.login-btn{
-    display: flex;
-    color: rgba(255, 255, 255, 0.52);
-    margin: 0 auto;
-    background-color: $purple;
-    border: none;
-    letter-spacing: .1rem;
-    font-weight:600;
+	border-color: inherit;
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }
 
-.login-btn:hover{
-    border: 2px solid $purple;
-    background-color: rgba(79, 0, 128, 0.409);
-    color: $purple;
+.login-btn {
+	display: flex;
+	color: rgba(255, 255, 255, 0.52);
+	margin: 0 auto;
+	background-color: $purple;
+	border: none;
+	letter-spacing: 0.1rem;
+	font-weight: 600;
+}
+
+.login-btn:hover {
+	border: 2px solid $purple;
+	background-color: rgba(79, 0, 128, 0.409);
+	color: $purple;
 }
