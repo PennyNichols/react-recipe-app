@@ -12,12 +12,12 @@ const Login = () => {
   return (
     <div className='login-page-wrapper'>
         <div className='login-wrapper'>
-            <Form className='login-form m-auto mt-5 pt-5' onSubmit={handleSubmit}>
+            <Form className='login-form m-auto mt-5 ' onSubmit={handleSubmit}>
                 <GiCupcake className='login-brand m-auto mb-3 d-flex'/>
-                <h2 className='login-title text-center'>Penny's Recipes</h2>
+                <h1 className='fw-bolder login-title text-center'>Penny's Recipes</h1>
                 <Input className='login-input' type="text" placeholder="Username" required />
                 <Input className='login-input' type="password" placeholder="Password" required />
-                <Button className='login-btn' type='submit' >Log In</Button>
+                <Button className='login-btn px-5' type='submit' >LOGIN</Button>
             </Form>
         </div>
     </div>

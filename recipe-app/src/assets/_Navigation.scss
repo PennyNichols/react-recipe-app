@@ -2,24 +2,39 @@
 
 .nav-wrapper{
     padding: 1rem;
-    background-color: rgba(79, 0, 128, 0.301);
+    padding-top: .5rem;
+    background-color: rgb(202, 179, 216);
+    overflow: none;
+    height: 5rem;
 }
 
 .brand{
-    font-size: 2.5rem;
+    font-size: 4rem;
     color: rgb(79, 0, 128);
+    padding: 0;
+    margin: 0;
+    transition: all 1s ease-in-out;
 }
 
-.brand:hover, a:hover{
+.brand:hover{
     color: rgba(255, 0, 255, 0.447);
+    transform: scale(1.2);
 }
 
 a{
+    font-size: 1.3rem;
     color: rgb(79, 0, 128);
     text-decoration: none;
     text-transform: uppercase;
-    line-height: 3rem;
+    line-height: 4rem;
     vertical-align:middle;
     font-weight: 600;
     letter-spacing: .1rem;
+    transition: all 1s ease-in-out;
+}
+
+a:hover{
+    color: rgba(255, 0, 255, 0.447);
+    font-size: 1.7rem;
+
 }
