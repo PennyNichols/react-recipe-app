@@ -1,3 +1,102 @@
+$btnColor: rgb(202, 179, 216);
+$btnText:  rgb(79, 0, 128);
+
+
+
 .home-wrapper{
-    background-color: rgba(144, 104, 169, 0.995);
+    background-color: rgba(144, 104, 169);
+    padding-bottom: 5rem;
+}
+
+.title{
+    color: rgba(255, 255, 255, 0.866);
+    letter-spacing: .3rem;
+
+}
+
+.search{
+    min-width: 30rem;
+    border: 2px solid rgba(255, 255, 255, 0.866);
+    padding: .25rem;
+    border-radius: .5rem;
+}
+
+.search-input{
+    border: none;
+    letter-spacing: .05rem;
+
+}
+
+.submit-btn{
+    background-color: $btnColor;
+    color: $btnText;
+    border:none;
+    letter-spacing: .1rem;
+
+}
+
+.submit-btn:hover{
+    background-color: $btnText;
+    color: rgb(202, 179, 216);
+
+}
+
+.dropdown-main{
+    background-color: $btnColor;
+    color: $btnText;
+    border: none;
+}
+
+.dropdown-main:hover{
+    background-color: $btnText;
+    color: rgb(202, 179, 216);
+
+}
+
+.dropdown-wrapper{
+    background-color: transparent;
+}
+
+.dropdown-menu{
+    background-color: $btnColor;
+    color: $btnText;
+}
+
+.dropdown-header{
+    color: $btnText;
+    font-weight: 700;
+    letter-spacing: .1rem;
+}
+
+.dropdown-item{
+    color: $btnText;
+}
+
+.dropdown-item:hover{
+    background-color: $btnText;
+    color: rgb(202, 179, 216);
+}
+
+.divider{
+    border: .1px solid $btnText
+}
+
+.home-brand-wrapper{
+    perspective: 1000px;
+}
+
+.home-brand-title{
+    color: $btnText;
+}
+
+.home-brand{
+    font-size: 15rem;
+    color: $btnText;
+    transform: rotateY(360deg);
+    animation: rotateAnimation 8s linear infinite;
+}
+
+@keyframes rotateAnimation{
+    from{transform: rotateY(360deg);}
+    to {transform: rotateY(0deg);}
 }
