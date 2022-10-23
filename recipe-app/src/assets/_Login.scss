@@ -1,17 +1,70 @@
+
+
+$purple: rgb(79,0,128);
+
+.login-page-wrapper{
+    background-image: url()
+}
+
+.login-wrapper{
+    display: flex;
+    background-color: rgba(79, 0, 128, 0.259);
+    width: 30rem;
+    height: 30rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid $purple;
+    margin: auto;
+    margin-top: 5rem;
+}
+
 .login-brand{
-    color: rgb(79, 0, 128);
+    color: $purple;
     font-size: 4rem;
 }
 
-.login-form{
-    width: 20rem;
+.login-title{
+    color: $purple;
 }
 
-input{
-    margin: 1rem;
+.login-form{
+    width: 25rem;
 }
+
+.login-input{
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 20rem;
+    background-color: rgba(79, 0, 128, 0.259);
+    border: none;
+    color: white;
+}
+
+.login-input:focus{
+    background-color: rgba(79, 0, 128, 0.259);
+    color: white;
+    outline: 0;
+}
+
+.login-input::placeholder{
+    color: rgba(255, 255, 255, 0.548);
+}
+
+.form-control:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
 
 .login-btn{
     display: flex;
     margin: 0 auto;
+    background-color: $purple;
+}
+
+.login-btn:hover{
+    border: 2px solid $purple;
+    background-color: transparent;
 }
