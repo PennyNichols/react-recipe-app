@@ -15,7 +15,7 @@ const Login = () => {
         <SiCodechef />
         <h2>Penny's Recipes</h2>
         <Input type="text" placeholder="Username" required />
-        <Input type="text" placeholder="Password" required />
+        <Input type="password" placeholder="Password" required />
         <Button type='submit' >Log In</Button>
       </Form>
     </div>
