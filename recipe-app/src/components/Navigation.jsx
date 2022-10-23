@@ -1,21 +1,21 @@
 import React from "react";
 import { Nav, NavbarBrand, NavItem, NavLink } from "reactstrap";
 import { Link } from "react-router-dom";
-import { SiCodechef } from "react-icons/si";
+import {GiCupcake} from 'react-icons/gi'
 
 const Navigation = () => {
 	return (
-		<div>
+		<div className="nav-wrapper">
 			<Nav variant="pills" activeKey="1" className="justify-content-between">
 				<NavItem>
 					<NavbarBrand>
 						<Link to="/home">
-							<SiCodechef />
+							<GiCupcake className="brand"  />
 						</Link>
 					</NavbarBrand>
 				</NavItem>
 
-				<div className="d-flex gap-2 me-2 nav-links">
+				<div className="d-flex gap-5 me-2 nav-links">
 					<NavItem>
 						<Link to="/about">About</Link>
 					</NavItem>
