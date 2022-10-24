@@ -6,14 +6,12 @@ import Details from './pages/details/Details';
 
 function App() {
   return (
-    <>
       <Routes>
         <Route path='/' element={<Login/>} />
         <Route path='/home' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/details' element={<Details/>} />
       </Routes>
-    </>
   );
 }
 
