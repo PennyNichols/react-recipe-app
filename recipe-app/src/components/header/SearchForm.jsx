@@ -20,8 +20,6 @@ const SearchForm = ({
 				type="text"
 				className="search-input"
 				placeholder="Search..."
-				required
-				onSubmit={handleSearch}
 				onChange={(e) => setQuery(e.target.value)}
 			/>
 			<Button className="submit-btn" type="submit" onClick={fetchData}>
@@ -32,9 +30,9 @@ const SearchForm = ({
 				id="mealTypes"
 				className="dropdown p-1"
 				onChange={(e) => setMeal(e.target.value)}
-				defaultValue="Meal Types"
+				
 			>
-				{mealTypes?.map((item, index) => (
+				{mealTypes?.map((item,index) => (
 					<option key={index} value={item.toLowerCase()}>
 						{item}
 					</option>

@@ -1,0 +1,20 @@
+.home-content-wrapper {
+	perspective: 1000px;
+}
+
+
+.about-brand {
+    height: 20rem;
+    margin: 5rem;
+	transform: rotateY(360deg);
+	animation: rotateAnimation 8s linear infinite;
+}
+
+@keyframes rotateAnimation {
+	from {
+		transform: rotateY(360deg);
+	}
+	to {
+		transform: rotateY(0deg);
+	}
+}

@@ -12,16 +12,16 @@ const Home = () => {
 	const [recipes, setRecipes] = useState();
 	const [meal, setMeal] = useState(mealTypes[0].toLowerCase());
 
-	const url = `https://api.edamam.com/search?q=${query}&app_id=46d25eed&app_key=30e9a9eccdf4236d8b3e549f17ac4268&mealType=${meal}`;
+	
 
 	const fetchData = async () => {
 		if (query !== "") {
-			const result = await axios.get(url);
+			const result = await axios.get(`https://api.edamam.com/search?q=${query}&app_id=46d25eed&app_key=30e9a9eccdf4236d8b3e549f17ac4268&mealType=${meal}`);
 			console.log(result.data.recipes);
 			setRecipes(result.data.recipes);
 			setQuery("");
 		} else {
-			console.log("empty form");
+			console.log("not working");
 		}
 	};
 
