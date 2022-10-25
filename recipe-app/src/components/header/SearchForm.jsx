@@ -9,6 +9,9 @@ const SearchForm = ({
 	setMeal,
 	meal,
 }) => {
+	const handleChange = (e) =>{
+		setMeal(e.target.value)
+	}
 	const handleSearch = (e) => {
 		e.preventDefault();
 		fetchData();
@@ -20,16 +23,17 @@ const SearchForm = ({
 				type="text"
 				className="search-input"
 				placeholder="Search..."
+				value={query}
 				onChange={(e) => setQuery(e.target.value)}
 			/>
-			<Button className="submit-btn" type="submit" onClick={fetchData}>
+			<Button className="submit-btn" type="submit" onClick={handleSearch}>
 				SEARCH
 			</Button>
 			<select
 				name="mealTypes"
 				id="mealTypes"
 				className="dropdown p-1"
-				onChange={(e) => setMeal(e.target.value)}
+				onChange={handleChange}
 				
 			>
 				{mealTypes?.map((item,index) => (
