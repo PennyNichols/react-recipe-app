@@ -1,6 +1,6 @@
 $btnColor: rgb(202, 179, 216);
 $btnText: rgb(79, 0, 128);
-
+$titleFont: 'Dancing Script', cursive;
 .home-wrapper {
 	background-color: rgba(144, 104, 169);
 	padding-bottom: 5rem;
@@ -9,6 +9,8 @@ $btnText: rgb(79, 0, 128);
 .title {
 	color: rgba(255, 255, 255, 0.866);
 	letter-spacing: 0.3rem;
+	font-family: $titleFont;
+	font-weight: 700;
 }
 
 .search {
@@ -48,6 +50,7 @@ select {
 
 .home-content-title {
 	color: $btnText;
+	font-family: $titleFont;
 }
 
 .home-brand {

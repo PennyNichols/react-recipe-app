@@ -2,6 +2,13 @@
 	perspective: 1000px;
 }
 
+.about-info .title{
+	font-family: $titleFont;
+}
+
+.title:first-of-type{
+	color: $purple;
+}
 
 .about-brand {
     height: 20rem;
