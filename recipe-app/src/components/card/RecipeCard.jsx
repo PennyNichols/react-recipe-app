@@ -4,9 +4,9 @@ import { Button, Card } from "reactstrap";
 import defaultImage from "../../assets/bg-img.jpg";
 
 const RecipeCard = ({ recipe }) => {
-	let navigate = useNavigate();
+	const navigate = useNavigate();
 	const selectRecipe = () => {
-		navigate("/details", { state: { recipe } });
+		navigate("details", { state: { recipe } });
 	};
 	return (
 		<Card style={{ width: "18rem" }}>

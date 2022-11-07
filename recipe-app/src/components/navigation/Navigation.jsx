@@ -3,7 +3,7 @@ import { Nav, NavbarBrand, NavItem } from "reactstrap";
 import { Link } from "react-router-dom";
 import { GiCupcake } from "react-icons/gi";
 
-const Navigation = () => {
+const Navigation = ({isAuth, setIsAuth}) => {
 	return (
 		<div className="nav-wrapper">
 			<Nav variant="pills" activeKey="1" className="justify-content-between">
@@ -29,7 +29,7 @@ const Navigation = () => {
 						</a>
 					</NavItem>
 					<NavItem>
-						<Link to="/">Log Out</Link>
+						{isAuth && <Link to="/login" onClick={()=> setIsAuth(false) }>Logout</Link>}
 					</NavItem>
 				</div>
 			</Nav>

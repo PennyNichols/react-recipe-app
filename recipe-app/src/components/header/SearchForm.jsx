@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Button, Form, Input } from "reactstrap";
 
 const SearchForm = ({
@@ -22,11 +22,11 @@ const SearchForm = ({
 			<Input
 				type="text"
 				className="search-input"
-				placeholder="Search..."
-				value={query}
 				onChange={(e) => setQuery(e.target.value)}
+				value={query}
+				placeholder="Search..."
 			/>
-			<Button className="submit-btn" type="submit" onClick={handleSearch}>
+			<Button className="submit-btn">
 				SEARCH
 			</Button>
 			<select

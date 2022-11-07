@@ -3,11 +3,12 @@ import { Button, Form, Input } from "reactstrap";
 import { useNavigate } from "react-router-dom";
 import { GiCupcake } from "react-icons/gi";
 
-const Login = () => {
+const Login = ({isAuth, setIsAuth}) => {
 	const navigate = useNavigate();
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		navigate("/home");
+		setIsAuth(true)
+		navigate("/");
 	};
 	return (
 		<div className="login-page-wrapper">

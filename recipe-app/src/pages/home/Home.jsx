@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Navigation from "../../components/navigation/Navigation";
 import Header from "../../components/header/Header";
-import RecipeCard from "../../components/card/RecipeCard";
 import DefaultHome from "./DefaultHome";
+import RecipeCard from '../../components/card/RecipeCard'
 
 
 const APP_ID = process.env.REACT_APP_APP_ID
@@ -32,7 +31,6 @@ const Home = () => {
 
 	return (
 		<div className="home-wrapper">
-			<Navigation />
 			<Header
 				setQuery={setQuery}
 				query={query}
@@ -41,15 +39,11 @@ const Home = () => {
 				setMeal={setMeal}
 				meal={meal}
 			/>
-			{/* {recipes ? (
+			
 				<div className="home-content-wrapper">
-					{recipes.map((recipe, index) => (
-						<RecipeCard key={index} recipe={recipe.recipe} />
-					))}
+					{ recipes.map((recipe, index) => <RecipeCard key={ index.toString() } recipe={ recipe?.recipe} />)}
 				</div>
-			) : ( */}
-				<DefaultHome/>
-			{/* )} */}
+			
 		</div>
 	);
 };
